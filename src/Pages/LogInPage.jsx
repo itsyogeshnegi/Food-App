@@ -30,6 +30,7 @@ const LogInPage = () => {
             console.error("Error getting user location:", error);
           }
         );
+        alert("Welcome 😊")
       }
     } catch (error) {
       console.log(error);
@@ -48,7 +49,7 @@ const LogInPage = () => {
 
       setTimeout(() => {
         navigate("/Home");
-      }, 2500);
+      }, 1500);
     } catch (error) {
       console.error("Error fetching address:", error);
     }

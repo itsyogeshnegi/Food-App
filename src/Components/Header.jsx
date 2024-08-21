@@ -15,6 +15,7 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.clear();
     navigate("/", { replace: true });
+    alert("Visit Again")
   };
 
   return (
@@ -37,9 +38,10 @@ const Header = () => {
           }>
           Home
         </li>
-        <li className="hover:text-orange-500">Options</li>
-        <li className="hover:text-orange-500">Order</li>
-        <li className="hover:text-orange-500">Help</li>
+        <li className="hover:text-orange-500">Menu</li>
+        <li className="hover:text-orange-500">Restaurants</li>
+        <li className="hover:text-orange-500">Cart</li>
+        <li className="hover:text-orange-500" onClick={handleLogout}>Log-Out</li>
       </ul>
     </div>
   );
